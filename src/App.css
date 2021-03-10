@@ -160,6 +160,60 @@ h1,h2,h3,h4,p{
   margin:30px;
 }
 
+.blur-card {
+  width: 600px;
+  height: 600px;
+  color: white;
+  background: black;
+  border-radius: 40px;
+  text-align: left;
+  padding-left: 40px;
+  padding-top: 30px;
+  margin-top: 20px;
+
+}
+
+.blue-gradient {
+  background: linear-gradient(-25deg, #E84A27 30%, #13294B 60%, #618dcf 100%);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+.green-gradient {
+  background: linear-gradient(-25deg, rgba(34,193,195,1) 0%, rgba(253,187,45,1) 100%);
+  background-size: 400% 400%;
+  animation: gradient 20s ease infinite;
+}
+
+@keyframes gradient {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+.blur-card-title {
+  font-size: 50px;
+  font-weight: bolder;
+}
+
+.blur-card-text {
+  list-style: none;
+  padding-top: 10px;
+  font-size: 35px;
+}
+
+.blur-card-img {
+  margin-top: 10px;
+  max-width: 550px;
+  border-radius: 30px;
+}
+
 @media all and (max-width: 450px) {
   :root {
     --fontsize-nav:1rem;
